@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "neuzzpp"
+version = "0.1.0"
+description = "Neural program smoothing for fuzzing implemeted as custom mutator for AFL++."
+authors = ["Irina Nicolae <Irina.Nicolae@bosch.com>", "Max Eisele <MaxCamillo.Eisele@bosch.com"]
+license = "Robert Bosch GmbH"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+matplotlib = "^3.4.2"
+seaborn = "^0.11.1"
+tensorflow = "^2.5.0"
+tensorflow-addons = "^0.14.0"
+pandas = "^1.3.5"
+scikit-learn = "^1.0.2"
+torch = "1.4.0"
+pygdbmi = "^0.10.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^4.0.1"
+isort = "^5.9.3"
+mypy = "^0.910"
+pre-commit = "^2.15.0"
+pylint = "^2.9.6"
+pytest = "^6.2.5"
+Sphinx = "^4.2.0"
+sphinx-autodoc-typehints = "^1.12.0"
+jupyter = "^1.0.0"
+
+[tool.black]
+line-length=100
+
+[tool.mypy]
+ignore_missing_imports = true
